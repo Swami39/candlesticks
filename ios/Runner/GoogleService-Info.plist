@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>796167893355-j5bo83mpgvu3qo8a6bqe1b70kr54e7ja.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.796167893355-j5bo83mpgvu3qo8a6bqe1b70kr54e7ja</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>796167893355-4m1ofuqfqj3h1rqin8u3sg270gi5cs9s.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDBMT1WuWrLxdGtXyAjLz3X_kQaEdRCTjA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>796167893355</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.flutterflow.sidemenu</string>
+	<key>PROJECT_ID</key>
+	<string>fintech-90b1e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fintech-90b1e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:796167893355:ios:03864ca4b7b534edcc9c2e</string>
+</dict>
+</plist>
