@@ -81,7 +81,12 @@ class _SidemenuState extends State<Sidemenu> {
                       maxHeight: 150,
                       maxWidth: 150,
                     ),
-                    child: Image.asset('images/PGlogo.jpg')),
+                    child: Image.asset(
+                      'images/logoM.png',
+                      width: 200,
+                      height: 100,
+                      fit: BoxFit.cover,
+                    )),
                 Divider(
                   indent: 8.0,
                   endIndent: 8.0,
