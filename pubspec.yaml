@@ -37,7 +37,6 @@ dependencies:
   firebase_core: 1.12.0
   firebase_core_web: 1.5.4
   fl_chart: ^0.50.1
-  floating_bottom_navigation_bar: 1.5.2
   font_awesome_flutter: 10.1.0
   google_fonts: 2.2.0
   google_sign_in: 5.2.1
