@@ -14,13 +14,11 @@ class Sidemenu extends StatefulWidget {
     this.width,
     this.height,
     this.items,
-    this.sidemenustyle,
   }) : super(key: key);
 
   final double width;
   final double height;
   final List<SidemenuRecord> items;
-  final List<SidemenuStyleRecord> sidemenustyle;
 
   @override
   _SidemenuState createState() => _SidemenuState();
@@ -83,7 +81,7 @@ class _SidemenuState extends State<Sidemenu> {
                       maxHeight: 150,
                       maxWidth: 150,
                     ),
-                    child: Image.network(widget.sidemenustyle[0].applogo)),
+                    child: Image.network("")),
                 Divider(
                   indent: 8.0,
                   endIndent: 8.0,
