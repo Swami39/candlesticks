@@ -75,7 +75,18 @@ class _SidemenuState extends State<Sidemenu> {
               backgroundColor: FlutterFlowTheme.of(context).primaryColor,
             ),
             title: Column(
-              children: [],
+              children: [
+                ConstrainedBox(
+                    constraints: BoxConstraints(
+                      maxHeight: 150,
+                      maxWidth: 150,
+                    ),
+                    child: Image.asset('assets/images/PGlogo.jpg')),
+                Divider(
+                  indent: 8.0,
+                  endIndent: 8.0,
+                ),
+              ],
             ),
             items: _result,
           ),
