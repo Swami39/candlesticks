@@ -72,7 +72,7 @@ class _SidemenuState extends State<Sidemenu> {
               selectedColor: Colors.lightBlue,
               selectedTitleTextStyle: TextStyle(color: Colors.white),
               selectedIconColor: Colors.white,
-              backgroundColor: Colors.blueAccent,
+              backgroundColor: FlutterFlowTheme.of(context).primaryColor,
             ),
             title: Column(
               children: [
