@@ -67,7 +67,7 @@ class _LoginRegisterationWidgetState extends State<LoginRegisterationWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Image.asset(
-                                    'assets/images/illi_4@2x.png',
+                                    'assets/images/df3hg_',
                                     width: 300,
                                     height: 300,
                                     fit: BoxFit.cover,
