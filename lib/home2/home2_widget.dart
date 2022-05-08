@@ -30,7 +30,7 @@ class _Home2WidgetState extends State<Home2Widget> {
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Image.asset(
-                    'assets/images/PGLogo.jpg',
+                    'assets/images/logoM.png',
                     width: 200,
                     height: 100,
                     fit: BoxFit.cover,
