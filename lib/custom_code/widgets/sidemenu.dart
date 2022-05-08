@@ -7,6 +7,8 @@ import 'package:flutter/material.dart';
 // Begin custom widget code
 import 'package:flutter/material.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
+import '../../barchart/barchart_widget.dart';
+import '../../candlesticks/candlesticks_widget.dart';
 
 class Sidemenu extends StatefulWidget {
   const Sidemenu({
@@ -99,46 +101,9 @@ class _SidemenuState extends State<Sidemenu> {
             child: PageView(
               controller: page,
               children: [
-                Container(
-                  color: Colors.white,
-                  child: Center(
-                    child: FLBarChartWidget(),
-                  ),
-                ),
-                Container(
-                  color: Colors.white,
-                  child: Center(
-                    //child: RadarChartWidget(),
-                    child: Text(
-                      'Users',
-                      style: TextStyle(fontSize: 35),
-                    ),
-                  ),
-                ),
-                Container(
-                  color: Colors.white,
-                  child: Center(
-                    child: CandlestickWidget(),
-                  ),
-                ),
-                Container(
-                  color: Colors.white,
-                  child: Center(
-                    child: Text(
-                      'Download',
-                      style: TextStyle(fontSize: 35),
-                    ),
-                  ),
-                ),
-                Container(
-                  color: Colors.white,
-                  child: Center(
-                    child: Text(
-                      'Settings',
-                      style: TextStyle(fontSize: 35),
-                    ),
-                  ),
-                ),
+                BarchartWidget(),
+                CandlesticksWidget(),
+                BarchartWidget(),
               ],
             ),
           ),
