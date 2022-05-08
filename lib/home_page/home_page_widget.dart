@@ -41,10 +41,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               List<SidemenuRecord> sidemenuSidemenuRecordList = snapshot.data;
               return Container(
                 width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height * 1,
+                height: MediaQuery.of(context).size.height * 0.9,
                 child: custom_widgets.Sidemenu(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height * 1,
+                  height: MediaQuery.of(context).size.height * 0.9,
                   items: sidemenuSidemenuRecordList.toList(),
                 ),
               );

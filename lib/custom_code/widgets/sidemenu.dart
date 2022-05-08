@@ -49,6 +49,7 @@ class _SidemenuState extends State<Sidemenu> {
         title: result.title,
         icon: Icon(_icons[result.icon]),
         onTap: () {
+          //TODO This is wrong - add a field in DB as pageindex and use below
           page.jumpToPage(result.priority);
         },
       ));
@@ -100,6 +101,7 @@ class _SidemenuState extends State<Sidemenu> {
           Expanded(
             child: PageView(
               controller: page,
+              scrollDirection: Axis.vertical,
               children: [
                 //     BarchartWidget(),
                 //     CandlesticksWidget(),

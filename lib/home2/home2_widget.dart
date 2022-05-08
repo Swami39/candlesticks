@@ -32,7 +32,7 @@ class _Home2WidgetState extends State<Home2Widget> {
                   Image.asset(
                     'assets/images/logoM.png',
                     width: 200,
-                    height: 100,
+                    height: 80,
                     fit: BoxFit.cover,
                   ),
                 ],
