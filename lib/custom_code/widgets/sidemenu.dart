@@ -81,7 +81,7 @@ class _SidemenuState extends State<Sidemenu> {
                       maxHeight: 150,
                       maxWidth: 150,
                     ),
-                    child: Image.network("")),
+                    child: Image.asset('assets/images/PhoenixgenLogo.jpg')),
                 Divider(
                   indent: 8.0,
                   endIndent: 8.0,

@@ -89,7 +89,7 @@ class _MyAppState extends State<MyApp> {
             )
           : currentUser.loggedIn
               ? NavBarPage()
-              : LoginWidget(),
+              : LoginRegisterationWidget(),
     );
   }
 }
