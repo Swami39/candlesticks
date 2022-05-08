@@ -102,11 +102,7 @@ class _SidemenuState extends State<Sidemenu> {
                 Container(
                   color: Colors.white,
                   child: Center(
-                    //child: FLBarChartWidget(),
-                    child: Text(
-                      'Dashboard',
-                      style: TextStyle(fontSize: 35),
-                    ),
+                    child: FLBarChartWidget(),
                   ),
                 ),
                 Container(
@@ -122,11 +118,7 @@ class _SidemenuState extends State<Sidemenu> {
                 Container(
                   color: Colors.white,
                   child: Center(
-                    //child: candelstickwidget(),
-                    child: Text(
-                      'Files',
-                      style: TextStyle(fontSize: 35),
-                    ),
+                    child: CandlestickWidget(),
                   ),
                 ),
                 Container(
