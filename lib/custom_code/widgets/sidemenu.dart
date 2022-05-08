@@ -14,11 +14,13 @@ class Sidemenu extends StatefulWidget {
     this.width,
     this.height,
     this.items,
+    this.sidemenustyle,
   }) : super(key: key);
 
   final double width;
   final double height;
   final List<SidemenuRecord> items;
+  final List<SidemenuStyleRecord> sidemenustyle;
 
   @override
   _SidemenuState createState() => _SidemenuState();
@@ -28,6 +30,16 @@ class _SidemenuState extends State<Sidemenu> {
   PageController page = PageController();
   final List<SideMenuItem> _result = [];
 
+  //TODO add more from https://fontawesomeicons.com/flutter/icons
+  final _icons = {
+    'notifications': Icons.notifications,
+    'search': Icons.search,
+    "settings": Icons.settings,
+    "home": Icons.home
+  };
+
+  //https://medium.com/analytics-vidhya/simplest-way-to-create-icons-dynamically-in-flutter-66e0b10984c6
+
   @override
   void initState() {
     super.initState();
@@ -35,10 +47,10 @@ class _SidemenuState extends State<Sidemenu> {
       _result.add(SideMenuItem(
         priority: result.priority,
         title: result.title,
+        icon: Icon(_icons[result.icon]),
         onTap: () {
           page.jumpToPage(result.priority);
         },
-        icon: Icon(Icons.supervisor_account),
       ));
     }
   }
@@ -67,11 +79,11 @@ class _SidemenuState extends State<Sidemenu> {
             title: Column(
               children: [
                 ConstrainedBox(
-                  constraints: BoxConstraints(
-                    maxHeight: 150,
-                    maxWidth: 150,
-                  ),
-                ),
+                    constraints: BoxConstraints(
+                      maxHeight: 150,
+                      maxWidth: 150,
+                    ),
+                    child: Image.network(widget.sidemenustyle[0].applogo)),
                 Divider(
                   indent: 8.0,
                   endIndent: 8.0,
@@ -87,6 +99,7 @@ class _SidemenuState extends State<Sidemenu> {
                 Container(
                   color: Colors.white,
                   child: Center(
+                    //child: FLBarChartWidget(),
                     child: Text(
                       'Dashboard',
                       style: TextStyle(fontSize: 35),
@@ -96,6 +109,7 @@ class _SidemenuState extends State<Sidemenu> {
                 Container(
                   color: Colors.white,
                   child: Center(
+                    //child: RadarChartWidget(),
                     child: Text(
                       'Users',
                       style: TextStyle(fontSize: 35),
@@ -105,6 +119,7 @@ class _SidemenuState extends State<Sidemenu> {
                 Container(
                   color: Colors.white,
                   child: Center(
+                    //child: candelstickwidget(),
                     child: Text(
                       'Files',
                       style: TextStyle(fontSize: 35),

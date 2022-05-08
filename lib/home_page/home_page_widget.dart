@@ -23,8 +23,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
-          child: StreamBuilder<List<SidemenuRecord>>(
-            stream: querySidemenuRecord(),
+          child: StreamBuilder<List<SidemenuStyleRecord>>(
+            stream: querySidemenuStyleRecord(),
             builder: (context, snapshot) {
               // Customize what your widget looks like when it's loading.
               if (!snapshot.hasData) {
@@ -38,14 +38,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   ),
                 );
               }
-              List<SidemenuRecord> sidemenuSidemenuRecordList = snapshot.data;
+              List<SidemenuStyleRecord> sidemenuSidemenuStyleRecordList =
+                  snapshot.data;
               return Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height * 1,
                 child: custom_widgets.Sidemenu(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height * 1,
-                  items: sidemenuSidemenuRecordList.toList(),
+                  items: sidemenuSidemenuStyleRecordList.toList(),
+                  sidemenustyle: sidemenuSidemenuStyleRecordList.toList(),
                 ),
               );
             },

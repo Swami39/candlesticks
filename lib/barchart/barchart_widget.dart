@@ -5,14 +5,14 @@ import '../custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CandlesticksWidget extends StatefulWidget {
-  const CandlesticksWidget({Key key}) : super(key: key);
+class BarchartWidget extends StatefulWidget {
+  const BarchartWidget({Key key}) : super(key: key);
 
   @override
-  _CandlesticksWidgetState createState() => _CandlesticksWidgetState();
+  _BarchartWidgetState createState() => _BarchartWidgetState();
 }
 
-class _CandlesticksWidgetState extends State<CandlesticksWidget> {
+class _BarchartWidgetState extends State<BarchartWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -41,8 +41,8 @@ class _CandlesticksWidgetState extends State<CandlesticksWidget> {
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
-              StreamBuilder<List<CandlesticksRecord>>(
-                stream: queryCandlesticksRecord(),
+              StreamBuilder<List<BarchartRecord>>(
+                stream: queryBarchartRecord(),
                 builder: (context, snapshot) {
                   // Customize what your widget looks like when it's loading.
                   if (!snapshot.hasData) {
@@ -56,16 +56,15 @@ class _CandlesticksWidgetState extends State<CandlesticksWidget> {
                       ),
                     );
                   }
-                  List<CandlesticksRecord>
-                      candlestickWidgetCandlesticksRecordList = snapshot.data;
+                  List<BarchartRecord> fLBarChartWidgetBarchartRecordList =
+                      snapshot.data;
                   return Container(
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height * 1,
-                    child: custom_widgets.CandlestickWidget(
+                    child: custom_widgets.FLBarChartWidget(
                       width: MediaQuery.of(context).size.width,
                       height: MediaQuery.of(context).size.height * 1,
-                      symbol: 'ETHBUSD',
-                      interval: '1h',
+                      bars: fLBarChartWidgetBarchartRecordList.toList(),
                     ),
                   );
                 },

@@ -32,6 +32,9 @@ abstract class SidemenuStyleRecord
   String get iconColour;
 
   @nullable
+  String get applogo;
+
+  @nullable
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference get reference;
 
@@ -40,7 +43,8 @@ abstract class SidemenuStyleRecord
     ..hoverColour = ''
     ..selectedColour = ''
     ..textColour = ''
-    ..iconColour = '';
+    ..iconColour = ''
+    ..applogo = '';
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('sidemenu_style');
@@ -70,6 +74,7 @@ Map<String, dynamic> createSidemenuStyleRecordData({
   String selectedColour,
   String textColour,
   String iconColour,
+  String applogo,
 }) =>
     serializers.toFirestore(
         SidemenuStyleRecord.serializer,
@@ -78,4 +83,5 @@ Map<String, dynamic> createSidemenuStyleRecordData({
           ..hoverColour = hoverColour
           ..selectedColour = selectedColour
           ..textColour = textColour
-          ..iconColour = iconColour));
+          ..iconColour = iconColour
+          ..applogo = applogo));
