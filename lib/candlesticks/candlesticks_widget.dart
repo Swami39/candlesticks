@@ -55,6 +55,7 @@ class _CandlesticksWidgetState extends State<CandlesticksWidget> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             width: MediaQuery.of(context).size.width,
