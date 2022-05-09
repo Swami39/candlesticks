@@ -35,7 +35,9 @@ class _SidemenuState extends State<Sidemenu> {
     'notifications': Icons.notifications,
     'search': Icons.search,
     "settings": Icons.settings,
-    "home": Icons.home
+    "home": Icons.home,
+    "bar_chart": Icons.bar_chart,
+    "candlestick_chart": Icons.candlestick_chart
   };
 
   //https://medium.com/analytics-vidhya/simplest-way-to-create-icons-dynamically-in-flutter-66e0b10984c6

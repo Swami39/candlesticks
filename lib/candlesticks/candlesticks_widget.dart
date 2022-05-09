@@ -55,16 +55,19 @@ class _CandlesticksWidgetState extends State<CandlesticksWidget> {
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width,
-                            height: MediaQuery.of(context).size.height * 1,
-                            child: custom_widgets.CandlestickWidget(
+                          Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(0, 0, 1, 0),
+                            child: Container(
                               width: MediaQuery.of(context).size.width,
                               height: MediaQuery.of(context).size.height * 1,
-                              symbol: 'ETHBUSD',
-                              interval: '1h',
+                              child: custom_widgets.CandlestickWidget(
+                                width: MediaQuery.of(context).size.width,
+                                height: MediaQuery.of(context).size.height * 1,
+                                symbol: 'ETHBUSD',
+                                interval: '1h',
+                              ),
                             ),
                           ),
                         ],

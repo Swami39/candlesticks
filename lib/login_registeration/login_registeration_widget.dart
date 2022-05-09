@@ -67,8 +67,8 @@ class _LoginRegisterationWidgetState extends State<LoginRegisterationWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Image.asset(
-                                    'assets/images/df3hg_',
-                                    width: 300,
+                                    'assets/images/PGLogo.jpg',
+                                    width: 600,
                                     height: 300,
                                     fit: BoxFit.cover,
                                   ),
@@ -79,7 +79,7 @@ class _LoginRegisterationWidgetState extends State<LoginRegisterationWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Text(
-                                          'Header One',
+                                          'Demo for Side Menu',
                                           style: FlutterFlowTheme.of(context)
                                               .title2
                                               .override(
@@ -100,7 +100,7 @@ class _LoginRegisterationWidgetState extends State<LoginRegisterationWidget> {
                                       children: [
                                         Expanded(
                                           child: Text(
-                                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+                                            'Simple White labled dashboarnd that can be configured from database.\nDynamic data from database in bar and candle stick charts',
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyText2
                                                 .override(
