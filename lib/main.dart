@@ -118,8 +118,8 @@ class _NavBarPageState extends State<NavBarPage> {
     final tabs = {
       'HomePage': HomePageWidget(),
       'candlesticks': CandlesticksWidget(),
-      'Barchart': BarchartWidget(),
       'Home2': Home2Widget(),
+      'Barchart': BarchartWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPage);
     return Scaffold(
