@@ -40,6 +40,17 @@ abstract class FlutterFlowTheme {
 
   Color primaryBtnText;
   Color lineColor;
+  Color customColor1;
+  Color richBlackFOGRA39;
+  Color blue;
+  Color turquoise;
+  Color cultured;
+  Color cerise;
+  Color lightCornflowerBlue;
+  Color blueGreen;
+  Color prussianBlue;
+  Color selectiveYellow;
+  Color tangerine;
 
   TextStyle get title1 => GoogleFonts.getFont(
         'Poppins',
@@ -97,6 +108,17 @@ class LightModeTheme extends FlutterFlowTheme {
 
   Color primaryBtnText = Color(0xFFFFFFFF);
   Color lineColor = Color(0xFFE0E3E7);
+  Color customColor1 = Color(0xFFD3BDED);
+  Color richBlackFOGRA39 = Color(0xFF070707);
+  Color blue = Color(0xFF3A28DE);
+  Color turquoise = Color(0xFF34D1BF);
+  Color cultured = Color(0xFFEFEFEF);
+  Color cerise = Color(0xFFD1345B);
+  Color lightCornflowerBlue = Color(0xFF8ECAE6);
+  Color blueGreen = Color(0xFF219EBC);
+  Color prussianBlue = Color(0xFF023047);
+  Color selectiveYellow = Color(0xFFFFB703);
+  Color tangerine = Color(0xFFFB8500);
 }
 
 class DarkModeTheme extends FlutterFlowTheme {
@@ -111,6 +133,17 @@ class DarkModeTheme extends FlutterFlowTheme {
 
   Color primaryBtnText = Color(0xFFFFFFFF);
   Color lineColor = Color(0xFF22282F);
+  Color customColor1 = Color(0xFFD3BDED);
+  Color richBlackFOGRA39 = Color(0xFF070707);
+  Color blue = Color(0xFF3A28DE);
+  Color turquoise = Color(0xFF34D1BF);
+  Color cultured = Color(0xFFEFEFEF);
+  Color cerise = Color(0xFFD1345B);
+  Color lightCornflowerBlue = Color(0xFF8ECAE6);
+  Color blueGreen = Color(0xFF219EBC);
+  Color prussianBlue = Color(0xFF023047);
+  Color selectiveYellow = Color(0xFFFFB703);
+  Color tangerine = Color(0xFFFB8500);
 }
 
 extension TextStyleHelper on TextStyle {

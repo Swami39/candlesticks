@@ -37,7 +37,7 @@ class _SidemenuState extends State<Sidemenu> {
     "settings": Icons.settings,
     "home": Icons.home,
     "bar_chart": Icons.bar_chart,
-    "candlestick_chart": Icons.candlestick_chart
+    "candlestick_chart": Icons.calculate,
   };
 
   //https://medium.com/analytics-vidhya/simplest-way-to-create-icons-dynamically-in-flutter-66e0b10984c6
@@ -73,11 +73,12 @@ class _SidemenuState extends State<Sidemenu> {
             controller: page,
             style: SideMenuStyle(
               displayMode: SideMenuDisplayMode.auto,
-              hoverColor: Colors.blue[100],
-              selectedColor: Colors.lightBlue,
-              selectedTitleTextStyle: TextStyle(color: Colors.white),
+              hoverColor: FlutterFlowTheme.of(context).blueGreen,
+              selectedColor: FlutterFlowTheme.of(context).prussianBlue,
+              selectedTitleTextStyle: TextStyle(
+                  color: FlutterFlowTheme.of(context).selectiveYellow),
               selectedIconColor: Colors.white,
-              backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+              backgroundColor: FlutterFlowTheme.of(context).lightCornflowerBlue,
             ),
             title: Column(
               children: [
@@ -87,7 +88,7 @@ class _SidemenuState extends State<Sidemenu> {
                       maxWidth: 150,
                     ),
                     child: Image.asset(
-                      'images/logoM.png',
+                      'assets/images/logoM.png',
                       width: 200,
                       height: 100,
                       fit: BoxFit.cover,
